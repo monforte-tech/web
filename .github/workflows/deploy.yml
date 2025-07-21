@@ -26,6 +26,8 @@ jobs:
           path: .
           node-version: 24.4.0
           package-manager: pnpm@latest
+      - name: Install sharp
+        run: pnpm add sharp
 
   deploy:
     needs: build
