@@ -1,0 +1,59 @@
+:root {
+  --ancho: 900px;
+  --font-size: 16px;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  font-family: "URWDin", sans-serif;
+  font-size: var(--font-size);
+  font-weight: 200;
+  background-color: var(--arena);
+}
+
+h1 {
+  padding: 60px 0px 0px 20px;
+  font-weight: 400;
+  font-size: 3em;
+  width: 740px;
+  line-height: 1em;
+}
+
+h2 {
+  line-height: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+section {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+section.no-pie {
+  padding-bottom: 0px;
+}
+
+section.banner {
+  padding: 40px 40px 40px 40px;
+  font-size: 1.6em;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: underline;
+}

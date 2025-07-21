@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-XLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-XLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Demi.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-DemiItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "URWDin";
+    src: url("../fonts/URWDIN-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+}

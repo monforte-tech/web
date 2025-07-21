@@ -1,9 +1,18 @@
 ---
+import '../styles/colors.css'
+import '../styles/comun.css'
+import Pie from './Pie.astro'
+import Head from './Head.astro'
+
 interface Props {
 	title: string;
+    color?: string;
+    background?: string;
 }
 
-const { title } = Astro.props;
+const { title, color = "azulon", background = "arena" } = Astro.props;
+const textColor = `var(--${color})`;
+const backgroundColor = `var(--${background})`;
 ---
 
 <!doctype html>
@@ -17,34 +26,44 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+      <div class="wrapper">
+      <Head color={color} background={background}/>
+      <main>
+        <slot />
+      </main>
+      <Pie color={color} background={background}/>
+      </div>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
+<style is:global define:vars={{ textColor, backgroundColor}}>
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+      height: 100%;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+    body {
+      height: 100%;
+      margin: 0;
+      color: var(--textColor);
+      background-color: var(--backgroundColor);
+    }
+    a {
+      color: var(--textColor);
+      text-decoration: underline;
+    }
+     
+    a:visited {
+      color: var(--textColor);
+      text-decoration: underline;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      justify-items: center;
+      overflow: hidden;
+    }
+    main {
+      width: var(--ancho);
+    }
+
 </style>

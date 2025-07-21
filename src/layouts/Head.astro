@@ -1,0 +1,27 @@
+---
+import Horizontal from '../components/logos/Horizontal.astro';
+
+const { color = "azulon", background = "arena" } = Astro.props;
+const textColor = `var(--${color})`;
+const backgroundColor = `var(--${background})`;
+
+---
+<header>
+  <Horizontal color={color} />
+</header>
+
+<style define:vars={{ textColor, backgroundColor}}>
+
+header {
+  height: 190px;
+  width: 900px;
+  padding: 20px 0 0 0;
+  color: var(--textColor);
+  background: var(--backgroundColor)
+}
+
+.anagrama-header {
+
+  }
+
+</style>

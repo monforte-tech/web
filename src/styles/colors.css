@@ -1,0 +1,79 @@
+:root {
+  --negro: #051826;
+  --azulon: #244885;
+  --azulon-claro: #284f92;
+  --azulon-oscuro: #3c6ba3;
+  --azulclaro: #4377b5;
+  --azulclaro-mas: #5284bf;
+  --azulclaro-menos: #3c6ba3;
+  --arena: #e7dba0;
+  --arena-claro: #f2ecbc;
+  --arena-oscuro: #e4d794;
+  --gris: #a6a69c;
+  --gris-claro: #b5b5ad;
+  --gris-oscuro: #97978b;
+  --malva: #8a5f91;
+  --malva-claro: #966a9e;
+  --malva-oscuro: #7c5682;
+
+  --blanco: #fff;
+  --rojo: #c24e3d;
+  --amarillo: #faec76;
+  --verde: #8abf41;
+}
+
+#primer-banner {
+  color: var(--arena);
+  background-color: var(--azulon);
+}
+
+.malva {
+  color: var(--arena);
+  background-color: var(--malva);
+}
+
+.gradiente-malva {
+  color: var(--arena);
+  background: rgb(150, 106, 158);
+  background: radial-gradient(
+    circle,
+    rgba(150, 106, 158, 1) 35%,
+    rgba(124, 86, 130, 1) 100%
+  );
+}
+
+.azulon {
+  color: var(--arena);
+  background-color: var(--azulon);
+}
+
+.azulclaro {
+  color: var(--arena);
+  background-color: var(--azulclaro);
+}
+
+.gradiente-azulclaro {
+  color: var(--arena);
+  background: rgb(82, 132, 191);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 132, 191, 1) 35%,
+    rgba(40, 79, 146, 1) 100%
+  );
+}
+
+.pergamino {
+  color: var(--azulon);
+  background-color: var(--arena);
+  font-weight: 400;
+}
+
+.malva a,
+.azulclaro a,
+.azulon a {
+  color: var(--arena);
+}
+
+.pergamino a {
+  color: var(--azulon);
+}

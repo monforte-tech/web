@@ -1,0 +1,420 @@
+#logo {
+  height: 55px;
+  background-image: url("/static/img/claro-horizontal.svg");
+  background-repeat: no-repeat;
+  margin: 8px 0;
+}
+
+.banner {
+  width: 100%;
+}
+
+#banner1 {
+  color: var(--arena);
+  background-color: var(--azulon);
+}
+
+.jumbo {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#j1 {
+  background-image: url("../img/city2.jpg");
+}
+
+#j2 {
+  background-image: url("../img/truck2.jpg");
+}
+
+.mensaje {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.contenedor {
+  width: var(--ancho);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leermas {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  width: 100%;
+  text-align: right;
+  padding: 40px 0px 40px 0;
+}
+
+.contenido {
+  line-height: 1em;
+}
+
+.fichero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.ficha {
+  width: 30%;
+  padding: 10px 10px 0px 10px;
+}
+
+.ficha h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ficha-content {
+  min-height: 150px;
+  text-align: justify;
+}
+
+.blogero {
+  width: var(--ancho);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px 0px 20px;
+}
+
+.blogero a {
+  color: var(--arena);
+  text-decoration: none;
+}
+
+.post-cabecera {
+}
+
+.post {
+  width: 66%;
+  margin: 0px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.post h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.post-fecha {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px 0 15px 0;
+}
+
+.post-content {
+  overflow: hidden;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.escaparate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0px 0px 0px 20px;
+}
+
+.servicios-acerca {
+  padding-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.servicio {
+  text-align: justify;
+  padding: 0 20px 0 0;
+  text-justify: inter-word;
+}
+
+.servicio h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin: 40px 0 20px 0;
+}
+
+.servicio-content {
+  overflow: hidden;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.servicios-izquierda {
+  width: 58%;
+}
+
+.servicios-derecha {
+  width: 40%;
+}
+
+#pie-grid {
+  display: grid;
+  grid-template-columns: 20px 300px 20px 270px 20px 270px;
+  grid-template-rows: 40px 25px 20px 8em 20px 100px 5px;
+  overflow-x: hidden;
+}
+
+.links-title {
+  font-size: 21px;
+  font-weight: 600;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.links {
+  font-size: 16;
+  grid-column: 2/3;
+  grid-row: 4/7;
+}
+
+.links li {
+  display: list-item;
+  list-style-position: outside;
+  padding: 0 0 1em 0;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.about-title {
+  font-size: 21px;
+  font-weight: 600;
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+
+.about {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 16;
+  grid-column: 4/7;
+  grid-row: 4/5;
+  overflow: hidden;
+}
+
+.address {
+  font-size: 16;
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+.contact {
+  grid-column: 6/7;
+  grid-row: 6/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#primer-banner {
+  color: var(--arena);
+  background-color: var(--azulon);
+}
+
+.malva {
+  color: var(--arena);
+  background-color: var(--malva);
+}
+
+.gradiente-malva {
+  color: var(--arena);
+  background: rgb(150, 106, 158);
+  background: radial-gradient(
+    circle,
+    rgba(150, 106, 158, 1) 35%,
+    rgba(124, 86, 130, 1) 100%
+  );
+}
+
+.azulon {
+  color: var(--arena);
+  background-color: var(--azulon);
+}
+
+.azulclaro {
+  color: var(--arena);
+  background-color: var(--azulclaro);
+}
+
+.gradiente-azulclaro {
+  color: var(--arena);
+  background: rgb(82, 132, 191);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 132, 191, 1) 35%,
+    rgba(40, 79, 146, 1) 100%
+  );
+}
+
+.pergamino {
+  color: var(--azulon);
+  background-color: var(--arena);
+  font-weight: 400;
+}
+
+.malva a,
+.azulclaro a,
+.azulon a {
+  color: var(--arena);
+}
+
+.pergamino a {
+  color: var(--azulon);
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --ancho: 920px;
+  }
+}
+
+@media only screen and (max-width: 819px) and (min-width: 360px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    width: 300px;
+    padding: 20px 0 0 10px;
+    font-size: 30px;
+  }
+
+  .jumbo {
+    height: 0px;
+  }
+
+  #j1 {
+    background-image: none;
+  }
+
+  #j2 {
+    background-image: none;
+  }
+
+  .contenedor {
+    width: 100%;
+  }
+
+  .mensaje {
+    width: 100%;
+  }
+
+  .fichero {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .ficha {
+    width: 90%;
+    padding: 10px 5%;
+    height: auto;
+  }
+
+  .ficha-content {
+    height: auto;
+    min-height: 0px;
+  }
+
+  .blogero {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .post {
+    width: 90%;
+    padding: 10px 5%;
+  }
+
+  .escaparate {
+    width: 90%;
+    padding: 10px 5%;
+  }
+
+  .contenedor-servicios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicios-izquierda {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .servicios-iquierda {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .servicio {
+    width: 100%;
+  }
+
+  #pie-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: left;
+    gap: 10px;
+    width: 90%;
+    padding: 20px 5% 20px 5%;
+  }
+
+  .contact {
+    gap: 15px;
+  }
+
+  .email {
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+  }
+}
