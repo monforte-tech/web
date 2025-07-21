@@ -6,5 +6,5 @@ export default defineConfig({
   image: {
     service: passthroughImageService(),
   },
-  site: "https://montech.github.io",
+  site: "https://monforte-tech.github.io/web/",
 });
