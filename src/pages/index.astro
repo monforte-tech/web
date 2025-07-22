@@ -1,24 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Menu from '../components/Menu.astro';
 import {Image} from 'astro:assets';
 import mineroOrdenador from '../images/minero-ordenador.png';
 import robotMinero from '../images/robot-mina.png';
 import centroDeDatos from '../images/datos-bajo-tierra.png';
 import Horizontal from '../components/logos/Horizontal.astro';
 import Apilado from '../components/logos/Apilado.astro';
-import '../styles/home.css';
+import '../styles/comun.css';
+import '../styles/colors.css';
 
 ---
 
-<Layout title="Welcome to Monforte Technologies" color="azulon" background="arena">
-
+<Layout title="Welcome to Monforte Technologies" color="azulon" background="arena" visibleLogo="false">
+  <div slot="header">
+    <Menu color="azulon" />
+    <Horizontal color="azulon" />
+  </div>
+  
 <div class="remark">Nuestro objetivo es ofrecer una estrategia unificada frente a los retos que presenta la digitalización de las labores mineras, empleando para ello tecnologías abiertas.</div>
 
 <div class="fila">
     <div class="columna1">
       <h2>Integramos TIC y Minería</h2>
       <h3>Software</h3>
-      <p>Ponemos a disposición a través de Internet repositorios curados de software seleccionados para cubrir las necesidades de la industria extractiva basandonos en distribuciones de software abierto y aportando programas desarrollados a la medida de las necesidades mineras cubriendo casos de usos comunes y particulares.</p>
+      <p>Ponemos a disposición de nuestros clientes y usuarios a través de Internet repositorios curados de software seleccionados para cubrir las necesidades de la industria extractiva basandonos en distribuciones de software abierto y aportando programas desarrollados a la medida de las necesidades mineras cubriendo casos de usos comunes y particulares.</p>
 
 
       <h3>Hardware</h3>
@@ -43,7 +49,7 @@ import '../styles/home.css';
       <p>La seguridad es un criterio de primer nivel en nuestros desarrollos, buscando aplicar el principio de confianza cero en nuestros sistemas. Gestionamos integramente todas las facetas de la ciberseguridad como un proceso de mejora contínua buscando en todo momento tener nuestras soluciones actualizadas y verificadas.</p>
 
   <h3>Operaciones</h3>
-      <p>Automatizamos todo el ciclo de vida del software desde su desarrollo, testeo, empaquetamiento, distribución, instalación, monitorización y mantenimiento, usando para ello herramientas abiertas provinientes de los sistemas en la nube adaptadas al uso dentro de la mina.</p>
+      <p>Automatizamos todo el ciclo de vida del software a partir de su desarrollo, testeo, empaquetamiento, distribución, instalación, monitorización y mantenimiento, usando para ello herramientas abiertas y documentadas.</p>
   </div>
 </div>
 

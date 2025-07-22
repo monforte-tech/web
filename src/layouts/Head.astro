@@ -1,23 +1,32 @@
 ---
 import Horizontal from '../components/logos/Horizontal.astro';
+import Menu from '../components/Menu.astro'
 
 const { color = "azulon", background = "arena" } = Astro.props;
 const textColor = `var(--${color})`;
-const backgroundColor = `var(--${background})`;
+const backgroundColor = `var(--${background}-oscuro)`;
 
 ---
-<header>
-  <Horizontal color={color} />
-</header>
+<div class="header-wrapper">
+  <header>
+    <Menu color={color} visibleLogo="true" />
+    <Horizontal color={color} />
+  </header>
+</div>
 
 <style define:vars={{ textColor, backgroundColor}}>
 
-header {
-  height: 190px;
-  width: 900px;
-  padding: 20px 0 0 0;
-  color: var(--textColor);
+.header-wrapper {
+  width: 100%;
   background: var(--backgroundColor)
+}
+
+header {
+  width: 900px;
+  height: 14em;
+  margin: 0 auto 3em auto;
+  padding: 2.5em 0 2em 0;
+  color: var(--textColor);
 }
 
 .anagrama-header {
