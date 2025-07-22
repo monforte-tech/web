@@ -35,7 +35,7 @@ const backgroundColor = `var(--${background})`;
       </div>
 	</body>
 </html>
-<style is:global define:vars={{ textColor, backgroundColor}}>
+<style define:vars={{ textColor, backgroundColor }}>
 	html {
       height: 100%;
 	}
@@ -52,7 +52,6 @@ const backgroundColor = `var(--${background})`;
      
     a:visited {
       color: var(--textColor);
-      text-decoration: underline;
     }
 
     .wrapper {
@@ -62,8 +61,27 @@ const backgroundColor = `var(--${background})`;
       justify-items: center;
       overflow: hidden;
     }
-    main {
-      width: var(--ancho);
+    @media (width > 900px) {
+      main {
+        width: 900px;
+      }
     }
 
+    @media (600px <= width <= 900px) {
+      main {
+        width: 98%;
+      }
+    }
+
+    @media (300px <= width <= 600px) {
+      main {
+        width: 98%;
+      }
+
+    }
+    @media (width < 600px) {
+      img.ilustracion {
+        display: none;
+      }
+    }
 </style>

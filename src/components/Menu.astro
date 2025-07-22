@@ -1,6 +1,7 @@
 ---
 import Horizontal from '../components/logos/Horizontal.astro';
 const { color, visibleLogo = false } = Astro.props;
+const textColor = `var(--${color})`;
 ---
 
 <div class="menu">
@@ -8,7 +9,7 @@ const { color, visibleLogo = false } = Astro.props;
     <a href="">Proyecto Minax</a>
 </div>
 
-<style>
+<style define:vars={{ textColor}}>
   .menu {
     height: 3em;
     display: flex;
@@ -20,6 +21,7 @@ const { color, visibleLogo = false } = Astro.props;
   }
 
   a {
+    text-decoration: underline;
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
@@ -27,5 +29,9 @@ const { color, visibleLogo = false } = Astro.props;
 
   a:hover {
     text-decoration: underline;
+  }
+
+  a:visited {
+    color: var(--textColor);
   }
 </style>

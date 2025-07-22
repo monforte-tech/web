@@ -16,7 +16,7 @@ import '../styles/colors.css';
   <div class="header" slot="header">
     <div class="header-wrapper">
       <Menu color="azulon" />
-      <Horizontal color="azulon" width="900px" />
+      <Horizontal color="azulon" />
     </div>
   </div>
   
@@ -35,11 +35,11 @@ import '../styles/colors.css';
       <h3>Comunicaciones</h3>
       <p>A partir de los requerimientos funcionales del sistema informático y las necesidades de comunicación de la dirección facultativa desplegaremos las redes para tener al personal comunicado y todos los dispositivos digitales conectados, monitorizados y actualizados.</p>
     </div>
-    <Image src={centroDeDatos} alt="Centro de datos bajo tierra" width={432}/>
+    <Image class="ilustracion" src={centroDeDatos} alt="Centro de datos bajo tierra" />
   </div>
 
 <div class="fila">
-  <Image src={mineroOrdenador} alt="Minero trabajando con su ordenador" width={432} />
+  <Image class="ilustracion" src={mineroOrdenador} alt="Minero trabajando con su ordenador" />
   <div class="columna2">
   <h2>Gestionamos Todo el Ciclo de Vida del Software</h2>
 
@@ -72,7 +72,7 @@ import '../styles/colors.css';
 
       <p>La generación y uso de modelos construidos mediante técnicas de aprendizaje automático y otras tecnologías del campo de la inteligencia artificial están revolucionando todos los ámbitos de la actividad humana. Nuestra apuesta es asistir a las empresas mineras en todo el ciclo de vida de este tipo de aplicaciones tecnológicas.
   </div>
-  <Image src={robotMinero} alt="Robot antropomorfo con un pico en una mina" width={432} />
+  <Image class="ilustracion" src={robotMinero} alt="Robot antropomorfo con un pico en una mina" />
 </div>
 </Layout>
 
@@ -108,20 +108,36 @@ img {
   margin-bottom: 2em;
 }
 
-.columna1 {
-  width: 48%;
+.columna1,
+.columna2 {
   margin-bottom: 4em;
 }
 
 .columna2 {
-  width: 48%;
   margin-bottom:2em;
 }
 
 .columna1 p, .columna2 p {
   text-align: justify;
   hyphens: auto;
+}
 
+@media (width > 900px) {
+  .header-wrapper {
+    width: 900px;
+  }
+}
+
+@media (600px <= width <= 900px) {
+  .header-wrapper {
+    width: 100%;
+  }
+}
+
+@media (300px <= width <= 600px) {
+  .header-wrapper {
+    width: 100%;
+  }
 }
 
 </style>
