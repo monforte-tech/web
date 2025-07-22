@@ -2,14 +2,14 @@
 import Horizontal from '../components/logos/Horizontal.astro';
 import Menu from '../components/Menu.astro'
 
-const { color = "azulon", background = "arena" } = Astro.props;
+const { color = "azulon", background = "arena", visibleLogo = "true" } = Astro.props;
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background}-oscuro)`;
 
 ---
 <div class="header-wrapper">
   <header>
-    <Menu color={color} visibleLogo="true" />
+    <Menu color={color} visibleLogo={visibleLogo} />
     <Horizontal color={color} />
   </header>
 </div>

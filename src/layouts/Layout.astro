@@ -26,7 +26,7 @@ const backgroundColor = `var(--${background})`;
 		<title>{title}</title>
 	</head>
 	<body>
-      <Head color={color} background={background}/>
+      <slot name="header" />
       <div class="wrapper">
       <main>
         <slot />

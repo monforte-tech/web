@@ -12,10 +12,12 @@ import '../styles/colors.css';
 
 ---
 
-<Layout title="Welcome to Monforte Technologies" color="azulon" background="arena" visibleLogo="false">
-  <div slot="header">
-    <Menu color="azulon" />
-    <Horizontal color="azulon" />
+<Layout title="Welcome to Monforte Technologies" color="azulon" background="arena">
+  <div class="header" slot="header">
+    <div class="header-wrapper">
+      <Menu color="azulon" />
+      <Horizontal color="azulon" width="900px" />
+    </div>
   </div>
   
 <div class="remark">Nuestro objetivo es ofrecer una estrategia unificada frente a los retos que presenta la digitalización de las labores mineras, empleando para ello tecnologías abiertas.</div>
@@ -75,6 +77,16 @@ import '../styles/colors.css';
 </Layout>
 
 <style>
+
+.header {
+  background-color: var(--arena-oscuro);
+}
+
+.header-wrapper {
+  width: 900px;
+  padding-bottom: 1em;
+  margin: 0 auto 2em auto;
+}
 
 
 img {
