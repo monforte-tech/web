@@ -59,38 +59,3 @@ b {
 a {
   text-decoration: underline;
 }
-
-@media (width > 900px) {
-  main {
-    width: 900px;
-  }
-}
-
-@media (600px <= width <= 900px) {
-  main {
-    width: 98%;
-  }
-  div.columna1,
-  div.columna2 {
-    width: 48%;
-  }
-}
-
-@media (300px <= width <= 600px) {
-  main {
-    width: 98%;
-    div.columna1,
-    div.columna2 {
-      width: 98%;
-    }
-  }
-}
-@media (width < 600px) {
-  img.ilustracion {
-    display: none;
-  }
-  div.columna1,
-  div.columna2 {
-    width: 98%;
-  }
-}

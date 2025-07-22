@@ -11,28 +11,34 @@ const backgroundColor = `var(--${background}-oscuro)`;
 ---
 <footer id="pie" class="pergamino no-pie">
   <div class="footer-wrapper">
-    <div class="links-title">Enlaces</div>
     <div class="links">
-      <ul>
-        <li><a href="">Colegio de Ingenieros de Minas</a>
-        <li><a href="">Página Personal</a>
-        <li><a href="">Proyecto Minax</a>
-      </ul>
+      <div class="links-title">Enlaces</div>
+      <div class="links-links">
+        <ul>
+          <li><a href="">Colegio de Ingenieros de Minas</a>
+          <li><a href="">Página Personal</a>
+          <li><a href="">Proyecto Minax</a>
+        </ul>
+      </div>
     </div>
-    <div class="address">Monforte Technologies<br>
-  San Bernardo 14, Primero<br>
-  33402 Avilés (Asturias)<br>
-  España</div>
-    <div class="contact-title">
-      Contacto
+    <div class="address">
+      <div class="address-title">Dirección</div>
+        Monforte Technologies<br>
+    San Bernardo 14, Primero<br>
+    33402 Avilés (Asturias)<br>
+    España</div>
+    <div class="contact">
+      <div class="contact-title">
+        Contacto
+      </div>
+      <div class="social-container">
+        <div class="social"><a href="https://www.facebook.com/monforte.tech"><Facebook color={color} /></a></div>
+        <div class="social"><a href="https://x.com/monforte_tech"><Twitter color={color}/></a></div>
+        <div class="social"><a href="https://github.com/monforte-tech"><Github color={color} /></a></div>
+        <div class="social"><a href="https://www.linkedin.com/company/monforte-tech/"><Linkedin color={color} /></a></div>
+      </div>
+      <div class="email"><a href="mailto:contacto@monforte.tech">contacto@monforte.tech</a></div>
     </div>
-    <div class="social-container">
-      <div class="social"><a href="https://www.facebook.com/monforte.tech"><Facebook color={color} /></a></div>
-      <div class="social"><a href="https://x.com/monforte_tech"><Twitter color={color}/></a></div>
-      <div class="social"><a href="https://github.com/monforte-tech"><Github color={color} /></a></div>
-      <div class="social"><a href="https://www.linkedin.com/company/monforte-tech/"><Linkedin color={color} /></a></div>
-    </div>
-    <div class="email"><a href="mailto:contacto@monforte.tech">contacto@monforte.tech</a></div>
   </div>
  </footer>
 
@@ -47,26 +53,24 @@ const backgroundColor = `var(--${background}-oscuro)`;
   }
 
   .footer-wrapper {
-    margin: 0 auto;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 900px;
     padding-top: 2em;
-    grid-template-columns: 20px 300px 20px 270px 20px 270px;
-    grid-template-rows: 20px 25px 20px auto 20px;
-  }
-
-  .links-title {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-weight: bold;
-    font-size: 21px;
-
+    margin: 0 auto;
   }
 
   .links {
     font-size: 16px;
-    grid-column: 2/3;
-    grid-row: 4/5;
+    margin: 1em;
+  }
+
+  .links-title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 1em;
   }
 
   .links ul {
@@ -94,20 +98,27 @@ const backgroundColor = `var(--${background}-oscuro)`;
 
   .address {
     font-size: 16px;
-    grid-column: 4/6;
-    grid-row: 4/5;
+    margin: 1em;
+  }
+
+  .address-title {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  .contact {
+    margin: 1em;
+
   }
 
   .contact-title {
+    margin-bottom: 1em;
     font-weight: bold;
     font-size: 21px;
-    grid-row: 2/3;
-    grid-column: 4/6;
   }
 
   .social-container {
-    grid-column: 6/7;
-    grid-row: 4/5;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,8 +126,6 @@ const backgroundColor = `var(--${background}-oscuro)`;
   }
 
   .email {
-    grid-column: 5/7;
-    grid-row: 2/3;
     font-size: 21px;
     font-weight: 600;
     color: var(--textColor);
@@ -125,6 +134,17 @@ const backgroundColor = `var(--${background}-oscuro)`;
 
   .email a {
     color: var(--textColor);
+  }
 
+  @media (width > 900px) {
+    .footer-wrapper {
+      width: 900px;
+    }
+  }
+
+  @media (width < 900px) {
+    .footer-wrapper {
+      width: 100%;
+    }
   }
 </style>

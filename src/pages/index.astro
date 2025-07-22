@@ -113,9 +113,6 @@ img {
   margin-bottom: 4em;
 }
 
-.columna2 {
-  margin-bottom:2em;
-}
 
 .columna1 p, .columna2 p {
   text-align: justify;
@@ -126,11 +123,34 @@ img {
   .header-wrapper {
     width: 900px;
   }
+  div.columna1,
+  div.columna2 {
+    width: 96%;
+    margin: 0 2%;
+  }
 }
 
 @media (600px <= width <= 900px) {
   .header-wrapper {
     width: 100%;
+  }
+  div.columna1,
+  div.columna2 {
+    width: 96%;
+    margin: 0 2%;
+    margin-bottom: 0;
+  }
+}
+
+@media (width < 600px) {
+  img.ilustracion {
+    display: none;
+  }
+  div.columna1,
+  div.columna2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0;
   }
 }
 

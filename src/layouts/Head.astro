@@ -2,7 +2,7 @@
 import Horizontal from '../components/logos/Horizontal.astro';
 import Menu from '../components/Menu.astro'
 
-const { color = "azulon", background = "arena", visibleLogo = "true" } = Astro.props;
+const { color = "azulon", background = "arena", visibleLogo = true } = Astro.props;
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background}-oscuro)`;
 
