@@ -5,7 +5,7 @@ import {Image} from 'astro:assets';
 import mineroOrdenador from '../images/minero-ordenador.png';
 import robotMinero from '../images/robot-mina.png';
 import centroDeDatos from '../images/datos-bajo-tierra.png';
-import Horizontal from '../components/logos/Horizontal.astro';
+import LogoHorizontal from '../components/logos/Horizontal.astro';
 import Apilado from '../components/logos/Apilado.astro';
 import '../styles/comun.css';
 import '../styles/colors.css';
@@ -15,12 +15,15 @@ import '../styles/colors.css';
 <Layout title="Welcome to Monforte Technologies" color="azulon" background="arena">
   <div class="header" slot="header">
     <div class="header-wrapper">
-      <Menu color="azulon" />
-      <Horizontal color="azulon" />
+      <Menu color="azulon" >
+        <a class="menulink" href="">Acerca De</a>
+        <a class="menulink" href="">Proyecto Minax</a>
+      </Menu>
+      <LogoHorizontal color="azulon" />
     </div>
   </div>
   
-<div class="remark">Nuestro objetivo es ofrecer una estrategia unificada frente a los retos que presenta la digitalización de las labores mineras, empleando para ello tecnologías abiertas.</div>
+<div class="remark">Nuestro objetivo es ofrecer una estrategia unificada frente a los retos que presenta la digitalización de las labores mineras empleando para ello tecnologías abiertas</div>
 
 <div class="fila">
     <div class="columna1">
@@ -120,6 +123,9 @@ img {
 }
 
 @media (width > 900px) {
+  .remark {
+    width: 900px;
+  }
   .header-wrapper {
     width: 900px;
   }
@@ -131,6 +137,11 @@ img {
 }
 
 @media (600px <= width <= 900px) {
+  .remark {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header-wrapper {
     width: 100%;
   }
@@ -143,6 +154,11 @@ img {
 }
 
 @media (width < 600px) {
+  .remark {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   img.ilustracion {
     display: none;
   }
