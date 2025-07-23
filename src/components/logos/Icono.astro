@@ -1,22 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.346457 28.346457">
+---
+const { color, width } = Astro.props;
+const miColor = `var(--${color})`;
+---
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.35 28.35">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #1d1d1b;
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke: #1d1d1b;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-    </style>
   </defs>
   <g>
-    <path class="cls-1" d="M2.260297,7.275926h1.555057l4.351944,9.073274,4.351944-9.073274h1.553475v13.87212h-1.553475v-10.705056l-3.827528,7.868619h-1.029849l-3.846511-7.868619v10.705056h-1.555057V7.275926Z"/>
-    <path class="cls-1" d="M22.122447,7.742602h-3.946965l.1139-.544191h8.578124l-.1139.544191h-3.946965l-2.760503,13.327929h-.684193l2.760503-13.327929Z"/>
+    <path class="cls-1" d="M2.26,7.28h1.56l4.35,9.07,4.35-9.07h1.55v13.87h-1.55v-10.71l-3.83,7.87h-1.03l-3.85-7.87v10.71h-1.56V7.28Z"/>
+    <path class="cls-1" d="M22.12,7.74h-3.95l.11-.54h8.58l-.11.54h-3.95l-2.76,13.33h-.68l2.76-13.33Z"/>
   </g>
-  <rect class="cls-2" width="28.111062" height="28.111062"/>
+  <rect class="cls-2" width="28.11" height="28.11"/>
 </svg>
+<style define:vars={{ miColor }}>
+  .cls-1 {
+    fill: var(--miColor);
+  }
+
+  .cls-2 {
+    fill: none;
+    stroke: var(--miColor);
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+</style>
+
