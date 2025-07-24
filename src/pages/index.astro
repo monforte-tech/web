@@ -9,13 +9,15 @@ import LogoHorizontal from '../components/logos/Horizontal.astro';
 import '../styles/comun.css';
 import '../styles/colors.css';
 import '../styles/columnas.css';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="About Monforte Technologies" color="azulon" background="arena">
     <Menu slot="menu">
-      <a class="menulink" href="">Acerca De</a>
-      <a class="menulink" href="">Blog</a>
-      <a class="menulink" href="">Proyecto Minax</a>
+      <a class="menulink" href={`${base}about`}>Acerca De</a>
+      <a class="menulink" href={`${base}blog`}>Blog</a>
+      <a class="menulink" href={`${base}minax`}>Proyecto Minax</a>
     </Menu>
     <LogoHorizontal color="azulon" slot="title" />
 
