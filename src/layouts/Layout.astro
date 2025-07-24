@@ -32,13 +32,13 @@ const base = import.meta.env.BASE_URL;
 	</head>
 	<body>
       <div class="wrapper">
-          <div class="header-wrapper">
-            <header>
-              <slot name="icono"/>
-              <slot name="menu"/>
-              <slot name="title"/>
-            </header>
-          </div>
+        <div class="header-wrapper">
+          <header>
+            <slot name="icono"/>
+            <slot name="menu"/>
+          <slot name="title"/>
+          </header>
+        </div>
         <main>
           <slot />
         </main>
@@ -47,7 +47,6 @@ const base = import.meta.env.BASE_URL;
 	</body>
 </html>
 <style define:vars={{ textColor, backgroundColor }}>
-
 	html {
       height: 100%;
 	}
@@ -64,30 +63,6 @@ const base = import.meta.env.BASE_URL;
       display: grid;
       grid-template-rows: auto 1fr auto;
       justify-items: center;
-    }
-
-    a {
-      color: var(--textColor);
-      text-decoration: underline;
-    }
-     
-    a:visited {
-      color: var(--textColor);
-    }
-
-    a.menulink {
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    a.menulink:hover {
-      text-decoration: underline;
-    }
-
-    a.menulink:visited {
-      color: var(--textColor);
     }
 
 .header-wrapper {
@@ -137,7 +112,7 @@ header {
 
   header {
     width: 100%;
-    margin-bottom: 0;
+    margin-botom: 0;
   }
 }
 </style>

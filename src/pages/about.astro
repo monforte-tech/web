@@ -18,31 +18,33 @@ const { title, color = "azulon", background = "arena" } = Astro.props;
     <a class="menulink" href={`${base}blog`}>Blog</a>
     <a class="menulink" href={`${base}minax`}>Proyecto Minax</a>
   </Menu>
-  <h1 slot="title">{title}</h1>
 
-  <div class="remark"></div>
+  <div class="about-wrapper">
+    <div class="remark"></div>
 
-<div class="fila">
-  <div class="columna1">
-    <h2>Visión</h2>
-        <p>El desarrollo de la humanidad que se debe en gran medida a  la minería que ha puesto a su disposición una cantidad ingente de recursos, materiales y energéticos, se ve amenazado ahora por una serie de fenómenos, especialmente el agotamiento de los recursos no renovables y el calentamiento climático, que son ambos de escala global y de terrible pronóstico</p>
+    <div class="fila">
+      <div class="columna1">
+        <h2>Visión</h2>
+            <p>El desarrollo de la humanidad que se debe en gran medida a  la minería que ha puesto a su disposición una cantidad ingente de recursos, materiales y energéticos, se ve amenazado ahora por una serie de fenómenos, especialmente el agotamiento de los recursos no renovables y el calentamiento climático, que son ambos de escala global y de terrible pronóstico</p>
 
-      <p>Muchas voces piden frenar el desarrollo para intentar minimizar el impacto de la actividad industrial en la tierra, pero desde nuestro punto de vista el fenómeno está demasiado avanzado y la única opción viable para frenarlo y revertirlo es la ingeniería a escala planetaria, para ello hay que incrementar la extracción de recursos a niveles que permitan crear procesos que reviertan los efectos sobre el clima de la actividad humana.</p>
+          <p>Muchas voces piden frenar el desarrollo para intentar minimizar el impacto de la actividad industrial en la tierra, pero desde nuestro punto de vista el fenómeno está demasiado avanzado y la única opción viable para frenarlo y revertirlo es la ingeniería a escala planetaria, para ello hay que incrementar la extracción de recursos a niveles que permitan crear procesos que reviertan los efectos sobre el clima de la actividad humana.</p>
 
+        </div>
+        <Image class="ilustracion" src={palaAsteroide} alt="Excavando un asteroide" />
     </div>
-    <Image class="ilustracion" src={palaAsteroide} alt="Excavando un asteroide" />
-</div>
-  <div class="fila">
-    <Image class="ilustracion" src={naveTierra} alt="Excavando un asteroide" />
-    <div class="columna2">
-    <h2>Misión</h2>
-    <p>Con este objetivo nuestra única opción consiste en avanzar la tecnología hasta lograr que nuestra civilización alcance el grado de desarrollo suficiente mediante la explotación de recursos terrestres y del espacio próximo lo más pronto posible.</p>
-      <p>Para poder lograrlo apostamos a que es necesario dotar de autonomía a nuestras máquinas para que sean capaces de operar en ambientes a donde los humanos no podamos llegar como la corteza terrestre profunda, el fondo de los oceanos y el espacio y para lograr esa autonomía es necesario robotizar por completo los procesos extractivos.</p>
+      <div class="fila">
+        <Image class="ilustracion" src={naveTierra} alt="Excavando un asteroide" />
+        <div class="columna2">
+        <h2>Misión</h2>
+        <p>Con este objetivo nuestra única opción consiste en avanzar la tecnología hasta lograr que nuestra civilización alcance el grado de desarrollo suficiente mediante la explotación de recursos terrestres y del espacio próximo lo más pronto posible.</p>
+          <p>Para poder lograrlo apostamos a que es necesario dotar de autonomía a nuestras máquinas para que sean capaces de operar en ambientes a donde los humanos no podamos llegar como la corteza terrestre profunda, el fondo de los oceanos y el espacio y para lograr esa autonomía es necesario robotizar por completo los procesos extractivos.</p>
 
-      <p>Es en esta labor donde Monforte Technologies centra su actividad buscando unificar los esfuerzos desde la academia, la empresa e internet en la creación de una serie de herramientas que simplifiquen en la medida de lo posible la digitalización de las labores mineras.</p>
-    </div>
+          <p>Es en esta labor donde Monforte Technologies centra su actividad buscando unificar los esfuerzos desde la academia, la empresa e internet en la creación de una serie de herramientas que simplifiquen en la medida de lo posible la digitalización de las labores mineras.</p>
+        </div>
+      </div>
+
+    <div class="about">Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que ha escogido enfocarse en el campo de la informática habiendose especializado en campos como la ciberseguridad, el aprendizaje automático, la visión artificial, la robótica autonoma y la programación web empleando su tiempo en el desarrollo de proyectos que acerquen las nuevas tecnologías a las labores mineras.</div>
   </div>
 
-<div class="about">Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que ha escogido enfocarse en el campo de la informática habiendose especializado en campos como la ciberseguridad, el aprendizaje automático, la visión artificial, la robótica autonoma y la programación web empleando su tiempo en el desarrollo de proyectos que acerquen las nuevas tecnologías a las labores mineras.</div>
-
 </Base>
+

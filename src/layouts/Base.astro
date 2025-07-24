@@ -2,6 +2,9 @@
 import Layout from './Layout.astro'
 import Menu from '../components/Menu.astro';
 import Icono2 from '../components/logos/Icono2.astro';
+import '../styles/comun.css';
+import '../styles/colors.css';
+import '../styles/columnas.css';
 
 interface Props {
 	title: string;
@@ -16,20 +19,44 @@ const backgroundColor = `var(--${background})`;
 ---
 <Layout title={title} color={color} background={background}>
 
-   <slot name="menu" slot="menu"/>
+  <slot name="menu" slot="menu"/>
   <div class="header-bar" slot="title">
     <a href={`${base}`}><Icono2 color={color} width="100px"/></a>
-    <h1>{ title }</h1>
+    <h1>{title}</h1>
   </div>
-   <slot />
+  <slot />
 </Layout>
 <style define:vars={{ textColor, backgroundColor }}>
+
+h1 {
+}
+
+div.title-thing {
+  height: 100px;
+  overflow: hidden;
+}
 
 div.header-bar {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
   height: 150px;
+  width: calc(100% - 2em);
 }
+
+@media (600px <= width <= 900px) {
+  div.header-bar {
+    padding-left: 2em;
+  }
+}
+
+@media (300px <= width <= 600px) {
+  div.header-bar {
+    padding-left: 2em;
+  }
+}
+
 </style>
 
