@@ -1,0 +1,25 @@
+---
+const { color, width } = Astro.props;
+const miColor = `var(--${color})`;
+---
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.11 30.11" width={width}>
+  <g>
+    <path class="cls-1" d="M4.9,8.35h1.3l3.63,8.72,3.63-8.72h1.3v13.33h-1.3v-10.29l-3.2,7.56h-.86l-3.21-7.56v10.29h-1.3v-13.33Z"/>
+    <path class="cls-1" d="M21.48,8.8h-3.3l.1-.52h7.16l-.1.52h-3.3l-2.3,12.81h-.57l2.3-12.81Z"/>
+  </g>
+  <rect class="cls-2" x="1" y="1" width="28.11" height="28.11"/>
+</svg>
+
+<style define:vars={{ miColor }}>
+  .cls-1 {
+    fill: var(--miColor);
+  }
+
+  .cls-2 {
+    fill: none;
+    stroke: var(--miColor);
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+  }
+</style>
+

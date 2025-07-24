@@ -2,7 +2,7 @@
 const { color, width } = Astro.props;
 const miColor = `var(--${color})`;
 ---
-<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.35 28.35">
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.35 28.35" width={width}>
   <defs>
   </defs>
   <g>
@@ -20,7 +20,7 @@ const miColor = `var(--${color})`;
     fill: none;
     stroke: var(--miColor);
     stroke-miterlimit: 10;
-    stroke-width: 2px;
+    stroke-width: 4px;
   }
 </style>
 

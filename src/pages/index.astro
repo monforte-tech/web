@@ -6,24 +6,18 @@ import mineroOrdenador from '../images/minero-ordenador.png';
 import robotMinero from '../images/robot-mina.png';
 import centroDeDatos from '../images/datos-bajo-tierra.png';
 import LogoHorizontal from '../components/logos/Horizontal.astro';
-import Apilado from '../components/logos/Apilado.astro';
 import '../styles/comun.css';
 import '../styles/colors.css';
-
 ---
 
-<Layout title="Welcome to Monforte Technologies" color="azulon" background="arena">
-  <div class="header" slot="header">
-    <div class="header-wrapper">
-      <Menu color="azulon" >
-        <a class="menulink" href="">Acerca De</a>
-        <a class="menulink" href="">Blog</a>
-        <a class="menulink" href="">Proyecto Minax</a>
-      </Menu>
-      <LogoHorizontal color="azulon" />
-    </div>
-  </div>
-  
+<Layout title="About Monforte Technologies" color="azulon" background="arena">
+    <Menu slot="menu">
+      <a class="menulink" href="">Acerca De</a>
+      <a class="menulink" href="">Blog</a>
+      <a class="menulink" href="">Proyecto Minax</a>
+    </Menu>
+    <LogoHorizontal color="azulon" slot="title" />
+
     <div class="remark">Nuestro objetivo es asistir en la robotización completa de las actividades mineras poniendo a disposición de las empresas extractoras soluciones de software abiertas que vertebren la digitalización de sus actividades</div>
 
 <div class="fila">
@@ -82,19 +76,6 @@ import '../styles/colors.css';
 
 <style>
 
-.header {
-  background-color: var(--arena-oscuro);
-  border-bottom: 1px solid var(--gris-claro);
-  font-size: 16px;
-}
-
-.header-wrapper {
-  width: 900px;
-  padding-bottom: 1em;
-  margin: 0 auto 2em auto;
-}
-
-
 img {
   width: 46%;
   height: auto;
@@ -120,7 +101,6 @@ img {
   margin-bottom: 4em;
 }
 
-
 .columna1 p, .columna2 p {
   text-align: justify;
   hyphens: auto;
@@ -128,9 +108,6 @@ img {
 
 @media (width > 900px) {
   .remark {
-    width: 900px;
-  }
-  .header-wrapper {
     width: 900px;
   }
   div.columna1 {
@@ -149,9 +126,6 @@ img {
     width: 98%;
     margin-left: auto;
     margin-right: auto;
-  }
-  .header-wrapper {
-    width: 100%;
   }
 
   div.columna1 {
@@ -187,12 +161,5 @@ img {
   }
 }
 
-@media (300px <= width <= 600px) {
-  .header-wrapper {
-    width: 100%;
-    margin-bottom: 0;
-    
-  }
-}
 
 </style>

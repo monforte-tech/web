@@ -1,14 +1,21 @@
 ---
+import Menu from '../components/Menu.astro';
 import Layout from '../layouts/Layout.astro';
+import Icono2 from '../components/logos/Icono2.astro';
+import LogoHorizontal from '../components/logos/Horizontal.astro';
 ---
 
 <Layout title="About Monforte Technologies" color="azulon" background="arena">
+  <Menu slot="menu">
+    <a href=""><LogoHorizontal color="azulon" width="250px" /></a>
+    <a class="menulink" href="">Blog</a>
+    <a class="menulink" href="">Proyecto Minax</a>
+</Menu>
 
 <div class="fila">
   <div class="columna1">
     <h2>Misión</h2>
         <p>El desarrollo de la humanidad que se debe en gran medida a  la minería que ha puesto a su disposición una cantidad ingente de recursos, materiales y energéticos, se ve amenazado ahora por una serie de fenómenos, especialmente el agotamiento de los recursos no renovables y el calentamiento climático, que son ambos de escala global y de terrible pronóstico</p>
-
 
       <p>Muchas voces piden frenar el desarrollo para intentar minimizar el impacto de la actividad industrial en la tierra, pero desde nuestro punto de vista el fenómeno está demasiado avanzado y la única opción viable para frenarlo y revertirlo es la ingeniería a escala planetaria, para ello hay que incrementar la extracción de recursos a niveles que permitan crear procesos que reviertan los efectos sobre el clima de la actividad humana.</p>
 

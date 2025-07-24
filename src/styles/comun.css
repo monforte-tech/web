@@ -65,6 +65,8 @@ a.menulink {
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
+  padding: 4px;
 }
 
 a.menulink:hover {
