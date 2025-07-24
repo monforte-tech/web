@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --ancho-grande: 900px;
   --ancho-mediano: 600px;
