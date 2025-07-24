@@ -13,7 +13,7 @@ interface Props {
     logo?: boolean;
 }
 
-const { title, color = "azulon", background = "arena", logo = false } = Astro.props;
+const { title, color = "azulon", background = "arena" } = Astro.props;
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background})`;
 const faviconUrl = `${import.meta.env.BASE_URL}/favicon.svg`;
@@ -34,8 +34,7 @@ const base = import.meta.env.BASE_URL;
       <div class="wrapper">
           <div class="header-wrapper">
             <header>
-
-          { logo && <a class="icono" href=`${base}`><Icono2 color="azulon" width="100px" /></a> }
+              <slot name="icono"/>
               <slot name="menu"/>
               <slot name="title"/>
             </header>

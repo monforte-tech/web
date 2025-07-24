@@ -1,12 +1,11 @@
 ---
 import Horizontal from '../components/logos/Horizontal.astro';
-const { color, visibleLogo = false } = Astro.props;
+const { color } = Astro.props;
 const textColor = `var(--${color})`;
 ---
 
 <div class="menu">
   <slot />
-  </slot>
 </div>
 
 <style define:vars={{ textColor }}>
@@ -14,7 +13,7 @@ const textColor = `var(--${color})`;
     height: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-wrap: no-wrap;
     align-items: center;
     padding-top: 0.5em;

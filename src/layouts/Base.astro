@@ -1,0 +1,35 @@
+---
+import Layout from './Layout.astro'
+import Menu from '../components/Menu.astro';
+import Icono2 from '../components/logos/Icono2.astro';
+
+interface Props {
+	title: string;
+    color?: string;
+    background?: string;
+}
+
+const { title, color = "azulon", background = "arena" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const textColor = `var(--${color})`;
+const backgroundColor = `var(--${background})`;
+---
+<Layout title={title} color={color} background={background}>
+
+   <slot name="menu" slot="menu"/>
+  <div class="header-bar" slot="title">
+    <a href={`${base}`}><Icono2 color={color} width="100px"/></a>
+    <h1>{ title }</h1>
+  </div>
+   <slot />
+</Layout>
+<style define:vars={{ textColor, backgroundColor }}>
+
+div.header-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 150px;
+}
+</style>
+
