@@ -80,3 +80,10 @@ a.menulink:hover {
 a.menulink:visited {
   color: var(--textColor);
 }
+
+.page-title {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 1em auto;
+  text-align: center;
+}
