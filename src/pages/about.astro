@@ -5,6 +5,7 @@ import Base from '../layouts/Base.astro';
 import LogoHorizontal from '../components/logos/Horizontal.astro';
 import palaAsteroide from '../images/pala-asteroide.png';
 import naveTierra from '../images/nave-tierra.png';
+import castillete from '../images/castillete.png';
 import '../styles/comun.css';
 import '../styles/colors.css';
 import '../styles/columnas.css';
@@ -41,6 +42,14 @@ const { title, color = "azulon", background = "arena" } = Astro.props;
 
           <p>Es en esta labor donde Monforte Technologies centra su actividad buscando unificar los esfuerzos desde la academia, la empresa e internet en la creación de una serie de herramientas que simplifiquen en la medida de lo posible la digitalización de las labores mineras.</p>
         </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1">
+        <h2>Valores</h2>
+        <p>Primero salvar la humanidad y luego el medioambiente. No es elegir uno u otro, es priorizar uno sobre lo otro.</p>
+      </div>
+        <Image class="ilustracion" src={castillete} alt="Excavando un asteroide" />
       </div>
 
     <div class="about">Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que ha escogido enfocarse en el campo de la informática habiendose especializado en campos como la ciberseguridad, el aprendizaje automático, la visión artificial, la robótica autonoma y la programación web empleando su tiempo en el desarrollo de proyectos que acerquen las nuevas tecnologías a las labores mineras.</div>
