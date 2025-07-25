@@ -6,6 +6,7 @@ import mineroOrdenador from '../images/minero-ordenador.png';
 import robotMinero from '../images/robot-mina.png';
 import centroDeDatos from '../images/datos-bajo-tierra.png';
 import LogoHorizontal from '../components/logos/Horizontal.astro';
+import LogoApilado from '../components/logos/Apilado.astro';
 import '../styles/comun.css';
 import '../styles/colors.css';
 import '../styles/columnas.css';
@@ -19,7 +20,8 @@ const base = import.meta.env.BASE_URL;
       <a class="menulink" href={`${base}blog`}>Blog</a>
       <a class="menulink" href={`${base}minax`}>Proyecto Minax</a>
     </Menu>
-    <LogoHorizontal color="azulon" slot="title" />
+    <LogoHorizontal  color="azulon" slot="title" />
+    <LogoApilado  color="azulon" slot="title" />
 
     <div class="remark">Nuestro objetivo es asistir en la robotización completa de las actividades mineras poniendo a disposición de las empresas extractoras soluciones de software abiertas que vertebren la digitalización de sus actividades</div>
 

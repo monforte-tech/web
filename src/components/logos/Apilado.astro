@@ -2,7 +2,7 @@
 const { color } = Astro.props;
 const miColor = `var(--${color})`
 ---
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.42015 34.006619">
+<svg class="logo-apilado" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.42015 34.006619">
   <g>
     <g>
       <path class="cls-2" d="M5.851029,7.102226h.959961l2.686523,5.601074,2.686523-5.601074h.958984v8.563477h-.958984v-6.608398l-2.362793,4.857422h-.635742l-2.374512-4.857422v6.608398h-.959961V7.102226Z"/>
@@ -41,5 +41,17 @@ const miColor = `var(--${color})`
     .cls-2 {
       fill: var(--miColor);
     }
+
+@media (width <= 600px) {
+  .logo-apilado {
+    display: block;
+  }
+}
+
+@media (width >= 600px) {
+  .logo-apilado {
+    display: none;
+  }
+}
 </style>
 

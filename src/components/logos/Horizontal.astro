@@ -2,7 +2,7 @@
 const { color, width } = Astro.props;
 const miColor = `var(--${color})`;
 ---
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.660104 24.646905" width={width}>
+<svg class="logo-horizontal" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.660104 24.646905" width={width}>
   <g>
     <g>
       <path class="cls-1" d="M5.906244,8.083097h.959961l2.686523,5.601074,2.686523-5.601074h.958984v8.563477h-.958984v-6.608398l-2.362793,4.857422h-.635742l-2.374512-4.857422v6.608398h-.959961v-8.563477Z"/>
@@ -41,4 +41,15 @@ const miColor = `var(--${color})`;
     stroke: var(--miColor);
     stroke-miterlimit: 10;
   }
+@media (300px <= width <= 600px) {
+  .logo-horizontal {
+    display: none;
+  }
+}
+
+@media (width >= 600px) {
+  .logo-horizontal {
+    display: block;
+  }
+}
 </style>
