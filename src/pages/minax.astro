@@ -1,18 +1,61 @@
 ---
+import Base from '../layouts/Base.astro';
+import Menu from '../components/Menu.astro';
+import {Image} from 'astro:assets';
+import minax from '../images/minax.png';
+import jumbo from '../images/jumbo.png';
+import corta from '../images/corta.png';
+import '../styles/comun.css';
+import '../styles/colors.css';
+import '../styles/columnas.css';
+
+const base = import.meta.env.BASE_URL;
 ---
-<div class="fila">
-  <div class="columna1">
-      <h2 id="minax">Proyecto Minax</h2>
+<Base title="MINAX Project" color="azulon" background="arena" >
+  <Menu slot="menu">
+    <a class="menulink" href={`${base}about`}>About</a>
+    <a class="menulink" href={`${base}blog`}>Blog</a>
+  </Menu>
 
-      <h3>Enfoque Total</h3>
-      <p>El objetivo de este proyecto es poner bajo el control del director facultativo y la propiedad todos los sistemas informáticos que operen en la explotación proporcionando además de una distribución de software una arquitectura informática centralizada así como un conjunto de herramientas para su control, monitorización y mantenimiento.</p>
+<div class="about-wrapper">
+    
+    <div class="remark">Una distribución de software que abarque la totalidad de las necesidades de las explotaciones mineras, desde sistemas empotrados a centros de computación</div>
 
-      <h3>Casos de Uso</h3>
-      <p>Para lograr este objetivo este proyecto se centrará en como resolver una serie de casos de uso comunes y futuribles de la informática en la minería y para ello proveerá el código y las recetas necesarias para que un informático de sistemas promedio pueda implementarlas.</p>
+  <div class="fila">
+    <div class="columna1">
+      <h2>Antecedentes</h2>
+      <p>En la actualidad la producción de materias primas mundial está en máximos históricos por la explotación de grandes yacimientos de muy altas productividades y una producción energética global a su vez muy elevada. Las herramientas y maquinaria de trabajo representan a su vez la culminación de una era de desarrollos y mejoras constantes.</p>
 
-      <h3>Automatización y Supervisión</h3>
-      <p>Buscamos reducir al máximo la deuda tecnológica utilizando sistemas de integración contínua y despliegue continuo lo que permite tener todo el software actualizado através de la red y a su vez bajo estrecha supervisión al distribuirse el software desde los repositorios de software supervisados.</p>
+        <p>Pero la producción de energía disponible global especialmente la proveniente del petróleo, clave para la actividad minera, amenaza con aguar la fiesta ya que los campos tradicionales parecen haber dejado atrás sus máximos de producción y las nuevas técnicas como el fraking no presentan espectativas a futuro muy optimistas.</p>
+
+        <p>En estas circunstancias poco alagueñas para la producción de materias primas aparece la revolución de la inteligencia artificial que promete dar una vuelta de tuerca a la productividad de las explotaciones mineras al poder mejorar a priori dos de las actividades más importantes de la actividad minera, la extracción y la clasificación del material extraido.</p>
+
+        <p>Pero esto requiere de la introducción de la computación a gran escala en la minería razón por la cual creamos este proyecto al no ver apriori ninguna iniciativa de este tipo y entender que es un reto que mejor enfrentamos de forma coordinada.</p>
+
+    </div>
+    <Image class="ilustracion" src={jumbo} alt="Four arms jumbo in a mine" />
+  </div>
+
+  <div class="fila">
+      <Image class="ilustracion" src={minax} alt="Minax computer inside a mine" />
+      <div class="columna2">
+        <h2>Objetivo</h2>
+        <p>Buscamos poner en manos del director facultativo y la propiedad de una explotación minera los componentes de software necesarios para poder construir los sistemas informáticos que doten a la mina de una paulatina autonomía en sus procesos productivos intentando abstraer la máxima complejidad posible en su gestión dotándoles a su vez de un extensivo control sobre los mismos.</p>
+
+        <p>Para lograr este objetivo este proyecto proveerá una arquitectura general que se podrá aplicar a la mayoría de las explotaciones además de una serie de casos de uso comunes y futuribles de la informática en la minería y para ello proporcionará del software y las recetas necesarias para poder implementarlas.</p>
+
+        <p>Luego para su despliegue, operación y mantenimiento aplicará la filosofía DevOps que se caracteriza por operar usando procesos de integración contínua y despliegues contínuos lo que simplifica en gran medida el uso de soluciones de software complejas. </p>
+
+        <p>Si bien no se conocen a priori las características de los sistemas de control autónomo que pueden aparecer en un futuro si sabemos los requerimientos de los sistemas informáticos de alto rendimiento lo que nos permite definir una arquitectura con sus requerimientos físicos, lógicos y de seguridad, lo que nos permite adelantarno a su implantación pudiendo acelerar el proceso de adopción.</p>
     </div>
   </div>
+  <div class="fila">
+    <div class="columna1">
+          <h2>Alcance</h2>
+    </div>
+    <Image class="ilustracion" src={corta} alt="Una corta robotizada" />
+  </div>
+
+</div>
 
 <style></style>

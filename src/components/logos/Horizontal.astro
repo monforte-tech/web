@@ -41,15 +41,16 @@ const miColor = `var(--${color})`;
     stroke: var(--miColor);
     stroke-miterlimit: 10;
   }
-@media (300px <= width <= 600px) {
-  .logo-horizontal {
-    display: none;
-  }
-}
 
-@media (width >= 600px) {
-  .logo-horizontal {
-    display: block;
+  @media (300px <= width <= 600px) {
+    .logo-horizontal {
+      display: none;
+    }
   }
-}
+
+  @media (width >= 600px) {
+    .logo-horizontal {
+      display: block;
+    }
+  }
 </style>
