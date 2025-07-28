@@ -5,6 +5,7 @@ import Base from '../layouts/Base.astro';
 import palaAsteroide from '../images/pala-asteroide.png';
 import naveTierra from '../images/nave-tierra.png';
 import castillete from '../images/castillete.png';
+import moais from '../images/moais.png';
 import '../styles/comun.css';
 import '../styles/colors.css';
 import '../styles/columnas.css';
@@ -46,14 +47,20 @@ const { title, color = "azulon", background = "arena" } = Astro.props;
       <div class="fila">
         <div class="columna1">
         <h2>Valores</h2>
-        <p>Pacifismo y evitar guerras por los recursos si toda la humanidad tiene una meta común</p>
-        <p>Primero salvar la humanidad y luego el medioambiente. No es elegir uno u otro, es priorizar uno sobre lo otro.</p>
+        <p>Las problemáticas globales amenazan con dividir en dos el mundo con un nuevo telón de acero que anticipe una tercera guerra mundial por los recursos menguantes mientras se estinguen las vidas de miles de millones de personas de hambre y de sed.</p>
+        <p>Ante este terrible panorama es necesario posicionarse encontra de las dinámicas belicistas y apostar por un desarrollo industrial de la humanidad más allá de la órbita terrestre buscando en satélites, asteroides y cometas recursos que se agotan en la superficie de nuestro planeta necesarios para mantener a flote las vidas de miles de millones de personas.</p>
+        <p>La revolución de la inteligencia artificial llega in extremis a una humanidad que va a necesitar hasta del último de los recursos disponibles para no quedar a la deriva en el mar de los Sargazos del tiempo.</p>
+
       </div>
-        <Image class="ilustracion" src={castillete} alt="Excavando un asteroide" />
+      <Image class="ilustracion" src={moais} alt="Moais de la era de la industrialización" />
       </div>
 
-    <div class="about">Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que ha escogido enfocarse en el campo de la informática habiendose especializado en campos como la ciberseguridad, el aprendizaje automático, la visión artificial, la robótica autonoma y la programación web empleando su tiempo en el desarrollo de proyectos que acerquen las nuevas tecnologías a las labores mineras.</div>
+  <div class="about">Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que escogió enfocarse en el campo de la inteligencia artificial y la robótica, especializadose también en campos como la ciberseguridad y la programación de sistemas Linux con el objetivo de implantar la revolución tecnológica IA en las explotaciones mineras y su industria asociada.</div>
   </div>
 
 </Base>
-
+<style>
+.about {
+  text-align: justify;
+}
+</style>

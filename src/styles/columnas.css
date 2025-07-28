@@ -25,6 +25,7 @@ img.ilustracion {
 
 .columna1 p,
 .columna2 p {
+  word-wrap: normal;
   text-align: justify;
   hyphens: auto;
 }
