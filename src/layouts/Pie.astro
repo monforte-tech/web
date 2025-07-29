@@ -4,7 +4,7 @@ import Twitter from '../components/logos/Twitter.astro';
 import Github from '../components/logos/Github.astro';
 import Linkedin from '../components/logos/Linkedin.astro';
 
-const { color = "azulon", background = "arena" } = Astro.props;
+const { lang, color = "azulon", background = "arena" } = Astro.props;
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background}-oscuro)`;
 
@@ -12,7 +12,9 @@ const backgroundColor = `var(--${background}-oscuro)`;
 <footer id="pie" class="pergamino no-pie">
   <div class="footer-wrapper">
     <div class="links">
-      <div class="links-title">Enlaces</div>
+      <div class="links-title">
+        {lang === "en" ? "Links" : "Enlaces"}
+      </div>
       <div class="links-links">
         <ul>
           <li><a href="">Colegio de Ingenieros de Minas</a>
@@ -22,14 +24,14 @@ const backgroundColor = `var(--${background}-oscuro)`;
       </div>
     </div>
     <div class="address">
-      <div class="address-title">Dirección</div>
+      <div class="address-title">{lang === "en" ? "Address" : "Dirección"}</div>
         Monforte Technologies<br>
     San Bernardo 14, Primero<br>
     33402 Avilés (Asturias)<br>
     España</div>
     <div class="contact">
       <div class="contact-title">
-        Contacto
+        {lang === "en" ? "Contact" : "Contacto"}
       </div>
       <div class="social-container">
         <div class="social"><a href="https://www.facebook.com/monforte.tech"><Facebook color={color} /></a></div>

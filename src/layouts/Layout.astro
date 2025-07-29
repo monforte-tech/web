@@ -33,6 +33,15 @@ const langLink = lang === 'en' ? `${base}es/${name}` :  `${base}${name}`;
     <link rel="icon" type="image/svg+xml" href={faviconUrl} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M99K1SV53Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M99K1SV53Z');
+    </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6b0dccc5-4a1c-49fa-a313-1c7b4bba6af7" data-blockingmode="auto" type="text/javascript"></script>
 	</head>
 	<body>
       <div class="wrapper">
@@ -51,7 +60,7 @@ const langLink = lang === 'en' ? `${base}es/${name}` :  `${base}${name}`;
         <main>
           <slot />
         </main>
-        <Pie color={color} background={background}/>
+      <Pie lang={lang} color={color} background={background}/>
       </div>
 	</body>
 </html>
