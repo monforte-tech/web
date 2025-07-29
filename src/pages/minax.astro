@@ -11,7 +11,7 @@ import '../styles/columnas.css';
 
 const base = import.meta.env.BASE_URL;
 ---
-<Base title="MINAX Project" color="azulon" background="arena" >
+<Base title="MINAX Project" color="azulon" background="arena" lang="en" name="minax">
   <Menu slot="menu">
     <a class="menulink" href={`${base}about`}>About</a>
     <a class="menulink" href={`${base}blog`}>Blog</a>
@@ -19,47 +19,50 @@ const base = import.meta.env.BASE_URL;
 
 <div class="about-wrapper">
     
-    <div class="remark">Una distribución de software que abarque la totalidad de las necesidades de las explotaciones mineras, desde sistemas empotrados a centros de computación</div>
+    <div class="remark">A software distribution that covers the full range of mining operations' needs, from embedded systems to data centers.</div>
 
   <div class="fila">
     <div class="columna1">
-      <h2>Antecedentes</h2>
-      <p>En la actualidad la producción de materias primas mundial está en máximos históricos por la explotación de grandes yacimientos de muy altas productividades y una producción energética global a su vez muy elevada. Las herramientas y maquinaria de trabajo representan a su vez la culminación de una era de desarrollos y mejoras constantes.</p>
+      <h2>Background</h2>
+      <p>Currently, global raw material production is at historic highs due to the exploitation of large, highly productive deposits and very high overall energy production. Tools and machinery represent the culmination of an era of continuous development and improvement.</p>
 
-        <p>Pero la producción de energía disponible global especialmente la proveniente del petróleo, clave para la actividad minera, amenaza con aguar la fiesta ya que los campos tradicionales parecen haber dejado atrás sus máximos de producción y las nuevas técnicas como el fraking no presentan espectativas a futuro muy optimistas.</p>
+      <p>However, the availability of global energy—especially oil, which is key to mining activity—is showing signs of decline, as traditional fields appear to have passed their production peaks and new techniques like fracking offer little long-term optimism.</p>
 
-        <p>En estas circunstancias poco alagüeñas para la producción de materias primas aparece la revolución de la inteligencia artificial que promete dar una vuelta de tuerca a la productividad de las explotaciones mineras al poder mejorar a priori dos de las actividades más importantes de la actividad minera, la extracción y la clasificación del material extraido.</p>
+      <p>In this less-than-promising context for raw material production, the artificial intelligence revolution emerges, promising to significantly boost mining productivity by improving, in principle, two of its most crucial activities: extraction and material classification.</p>
 
-        <p>Pero esto requiere de la introducción de la computación a gran escala en la minería razón por la cual creamos este proyecto al no ver apriori ninguna iniciativa de este tipo y entender que es un reto que mejor enfrentamos de forma coordinada.</p>
-
+      <p>But this requires large-scale computing in mining. That’s why we created this project—because we didn’t see any initiative of this kind and believe it’s a challenge best faced in a coordinated way.</p>
     </div>
-    <Image class="ilustracion" src={jumbo} alt="Four arms jumbo in a mine" />
+    <Image class="ilustracion" src={jumbo} alt="Four-arm jumbo in a mine" />
   </div>
 
   <div class="fila">
       <Image class="ilustracion" src={minax} alt="Minax computer inside a mine" />
       <div class="columna2">
-        <h2>Objetivo</h2>
-        <p>Buscamos poner en manos del director facultativo y la propiedad de una explotación minera los componentes de software necesarios para poder construir los sistemas informáticos que doten a la mina de una paulatina autonomía en sus procesos productivos intentando abstraer la máxima complejidad posible en su gestión dotándoles a su vez de un extensivo control sobre los mismos.</p>
+        <h2>Objective</h2>
+        <p>Our goal is to provide mine managers and operators with the software components necessary to build IT systems that progressively bring autonomy to production processes—abstracting complexity as much as possible while providing comprehensive control.</p>
 
-        <p>Para lograr este objetivo este proyecto proveerá una arquitectura general que se podrá aplicar a la mayoría de las explotaciones además de una serie de casos de uso comunes y futuribles de la informática en la minería y para ello proporcionará del software y las recetas necesarias para poder implementarlas.</p>
+        <p>To achieve this, the project will provide a general architecture applicable to most mining operations, along with common and forward-looking use cases for IT in mining, plus the software and implementation guides required.</p>
 
-        <p>Luego para su despliegue, operación y mantenimiento aplicará la filosofía DevOps que se caracteriza por operar usando procesos de integración contínua y despliegues contínuos lo que simplifica en gran medida el uso de soluciones de software complejas. </p>
+        <p>For deployment, operation, and maintenance, we will apply the DevOps philosophy, which uses continuous integration and continuous deployment processes to simplify the management of complex software solutions.</p>
 
-        <p>Si bien no se conocen a priori las características de los sistemas de control autónomo que pueden aparecer en un futuro si sabemos los requerimientos de los sistemas informáticos de alto rendimiento lo que nos permite definir una arquitectura con sus requerimientos físicos, lógicos y de seguridad, lo que nos permite adelantarno a su implantación pudiendo acelerar el proceso de adopción.</p>
+        <p>Although we don’t yet know what autonomous control systems might look like in the future, we do understand the needs of high-performance computing systems. This allows us to define an architecture—including physical, logical, and security requirements—that enables early adoption and accelerates implementation.</p>
     </div>
   </div>
+
   <div class="fila">
     <div class="columna1">
-          <h2>Alcance</h2>
-        <p>Si bien nuestros desarrollos abiertos se centran en automatizar las labores mineras e industriales asociadas, el software será de libre disposición admitiendose parches para arreglos pero a priori no se admitirán solicitudes de características fuera de este ámbito.</p>
-        <p>Buscaremos el máximo común divisor de las soluciones tecnológicas aplicadas no distribuyendo soluciones específicas a problemas que se den en casos particulares buscando la generalidad en el software distribuido.</p>
-        <p>Distribuiremos software, modelos entrenados, imágenes de disco, recetas de sistemas y documentación. Más allá de esto habría que ver que cuestiones pueden tener también nuestro interés.</p>
-        <p>Buscaremos en todo el ciclo de vida del software que este no quede fuera del alcance de los ingenieros de proceso que tengan que aplicarlo, ha de ser igual de transparente para ellos que los sistemas físicos bajo su control.</p>
-    </div>
-    <Image class="ilustracion" src={corta} alt="Una corta robotizada" />
-  </div>
+      <h2>Scope</h2>
+      <p>Although our open developments focus on automating mining and related industrial operations, the software will be freely available. Fix patches will be accepted, but feature requests outside this scope will not be considered by default.</p>
 
+      <p>We will aim for the greatest common denominator in technological solutions, avoiding specific responses to isolated issues and instead seeking generality in the software we distribute.</p>
+
+      <p>We will distribute software, pre-trained models, disk images, system recipes, and documentation. Beyond that, we will evaluate what additional topics might be of interest.</p>
+
+      <p>Throughout the software lifecycle, we will ensure that it remains accessible to process engineers using it—it must be as transparent to them as the physical systems they control.</p>
+    </div>
+    <Image class="ilustracion" src={corta} alt="A robotized open-pit mine" />
+  </div>
 </div>
 
 <style></style>
+

@@ -8,16 +8,20 @@ import '../styles/comun.css'
 
 interface Props {
 	title: string;
+    lang: string;
+    name: string;
     color?: string;
     background?: string;
     logo?: boolean;
 }
 
-const { title, color = "azulon", background = "arena" } = Astro.props;
+const { title, lang, name = "none", color = "azulon", background = "arena" } = Astro.props;
+const otherLang = lang === 'en' ? 'Español' : 'English';
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background})`;
 const faviconUrl = `${import.meta.env.BASE_URL}/favicon.svg`;
 const base = import.meta.env.BASE_URL;
+const langLink = lang === 'en' ? `${base}es/${name}` :  `${base}${name}`;
 ---
 
 <!doctype html>
@@ -35,7 +39,12 @@ const base = import.meta.env.BASE_URL;
         <div class="header-wrapper">
           <header>
             <slot name="icono"/>
-            <slot name="menu"/>
+            <div class="upper-bar">
+              <div class="lang-button">
+              <a href={langLink}>{otherLang}</a>
+              </div>
+              <slot name="menu"/>
+            </div>
           <slot name="title"/>
           </header>
         </div>
@@ -63,6 +72,26 @@ const base = import.meta.env.BASE_URL;
       display: grid;
       grid-template-rows: auto 1fr auto;
       justify-items: center;
+    }
+
+    .upper-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 0.5em;
+    }
+
+    .upper-bar a {
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+    .lang-button {
+      padding-top: 1em;
+      padding-left: 10px;
     }
 
 .header-wrapper {

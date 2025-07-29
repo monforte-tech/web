@@ -5,4 +5,11 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   base: "/web/",
   site: "https://monforte-tech.github.io/",
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "en",
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });

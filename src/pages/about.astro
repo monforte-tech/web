@@ -2,9 +2,9 @@
 import {Image} from 'astro:assets';
 import Menu from '../components/Menu.astro';
 import Base from '../layouts/Base.astro';
-import palaAsteroide from '../images/pala-asteroide.png';
-import naveTierra from '../images/nave-tierra.png';
-import castillete from '../images/castillete.png';
+import asteroidExcavator from '../images/pala-asteroide.png';
+import earthShip from '../images/nave-tierra.png';
+import miningTower from '../images/castillete.png';
 import moais from '../images/moais.png';
 import '../styles/comun.css';
 import '../styles/colors.css';
@@ -14,10 +14,10 @@ const base = import.meta.env.BASE_URL;
 const { title, color = "azulon", background = "arena" } = Astro.props;
 ---
 
-<Base title="About Monforte Technologies" color="azulon" background="arena" >
+<Base title="About Monforte Technologies" color="azulon" background="arena" lang="en" name="about">
   <Menu slot="menu">
     <a class="menulink" href={`${base}blog`}>Blog</a>
-    <a class="menulink" href={`${base}minax`}>Proyecto Minax</a>
+    <a class="menulink" href={`${base}minax`}>Project Minax</a>
   </Menu>
 
   <div class="about-wrapper">
@@ -25,45 +25,48 @@ const { title, color = "azulon", background = "arena" } = Astro.props;
 
     <div class="fila">
       <div class="columna1">
-        <h2>Visión</h2>
-            <p>El desarrollo de la humanidad que se debe en gran medida a  la minería que ha puesto a su disposición una cantidad ingente de recursos, materiales y energéticos, se ve amenazado ahora por una serie de fenómenos, especialmente el agotamiento de los recursos no renovables y el calentamiento climático, que son ambos de escala global y de terrible pronóstico</p>
+        <h2>Vision</h2>
+        <p>Human development, largely enabled by mining which has provided vast amounts of material and energy resources, is now threatened by a series of phenomena—especially the depletion of non-renewable resources and climate warming—both of which are global in scale and have dire forecasts.</p>
 
-          <p>Muchas voces piden frenar el desarrollo para intentar minimizar el impacto de la actividad industrial en la tierra, pero desde nuestro punto de vista el fenómeno está demasiado avanzado y la única opción viable para frenarlo y revertirlo es la ingeniería a escala planetaria, para ello hay que incrementar la extracción de recursos a niveles que permitan crear procesos que reviertan los efectos sobre el clima de la actividad humana.</p>
-
-        </div>
-        <Image class="ilustracion" src={palaAsteroide} alt="Excavando un asteroide" />
+        <p>Many voices call for halting development to minimize the impact of industrial activity on Earth, but from our perspective, the situation is too far advanced. The only viable option to stop and reverse it is planetary-scale engineering. For that, resource extraction must be increased to levels that enable processes capable of reversing human-driven climate effects.</p>
+      </div>
+      <Image class="ilustracion" src={asteroidExcavator} alt="Excavating an asteroid" />
     </div>
-      <div class="fila">
-        <Image class="ilustracion" src={naveTierra} alt="Excavando un asteroide" />
-        <div class="columna2">
-        <h2>Misión</h2>
-        <p>Con este objetivo nuestra única opción consiste en avanzar la tecnología hasta lograr que nuestra civilización alcance el grado de desarrollo suficiente mediante la explotación de recursos terrestres y del espacio próximo lo más pronto posible.</p>
-          <p>Para poder lograrlo apostamos a que es necesario dotar de autonomía a nuestras máquinas para que sean capaces de operar en ambientes a donde los humanos no podamos llegar como la corteza terrestre profunda, el fondo de los oceanos y el espacio y para lograr esa autonomía es necesario robotizar por completo los procesos extractivos.</p>
 
-          <p>Es en esta labor donde Monforte Technologies centra su actividad buscando unificar los esfuerzos desde la academia, la empresa e internet en la creación de una serie de herramientas que simplifiquen en la medida de lo posible la robotización de las labores mineras.</p>
-        </div>
-      </div>
+    <div class="fila">
+      <Image class="ilustracion" src={earthShip} alt="Spaceship approaching Earth" />
+      <div class="columna2">
+        <h2>Mission</h2>
+        <p>To achieve this goal, our only option is to advance technology so that our civilization reaches the required development level through the exploitation of Earth and near-space resources as soon as possible.</p>
 
-      <div class="fila">
-        <div class="columna1">
-        <h2>Valores</h2>
-        <p>Las problemáticas globales amenazan con dividir en dos el mundo con un nuevo telón de acero que anticipe una tercera guerra mundial por los recursos menguantes mientras se estinguen las vidas de miles de millones de personas de hambre y de sed.</p>
-        <p>Ante este terrible panorama es necesario posicionarse encontra de las dinámicas belicistas y apostar por un desarrollo industrial de la humanidad más allá de la órbita terrestre buscando en satélites, asteroides y cometas recursos que se agotan en la superficie de nuestro planeta necesarios para mantener a flote las vidas de miles de millones de personas.</p>
-        <p>La revolución de la inteligencia artificial llega in extremis a una humanidad que va a necesitar hasta del último de los recursos disponibles para no quedar a la deriva en el mar de los Sargazos del tiempo.</p>
+        <p>To do so, we believe it's essential to give machines the autonomy to operate in environments where humans cannot reach—such as deep within the Earth's crust, the ocean floor, and outer space. To achieve this autonomy, the extractive processes must be fully robotized.</p>
 
+        <p>It is in this effort that Monforte Technologies focuses its activity, aiming to unify efforts from academia, industry, and the internet in creating a series of tools that simplify, as much as possible, the robotization of mining operations.</p>
       </div>
-      <Image class="ilustracion" src={moais} alt="Moais de la era de la industrialización" />
+    </div>
+
+    <div class="fila">
+      <div class="columna1">
+        <h2>Values</h2>
+        <p>Global issues threaten to split the world in two, raising a new iron curtain and setting the stage for a third world war over dwindling resources, while billions of lives face hunger and thirst.</p>
+
+        <p>Faced with this bleak outlook, it is essential to take a stand against militaristic dynamics and advocate for industrial development beyond Earth's orbit—seeking in satellites, asteroids, and comets the resources that are vanishing from our planet’s surface, and which are essential for sustaining billions of lives.</p>
+
+        <p>The artificial intelligence revolution arrives just in time for a humanity that will need every last available resource to avoid drifting in the Sargasso Sea of time.</p>
       </div>
+      <Image class="ilustracion" src={moais} alt="Moais from the industrial era" />
+    </div>
 
     <div class="about">
-    <h2>Acerca del Fundador</h2>
-    <p>Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que escogió enfocarse en el campo de la inteligencia artificial y la robótica, especializadose también en campos como la ciberseguridad y la programación de sistemas Linux con el objetivo de implantar la revolución tecnológica IA en las explotaciones mineras y su industria asociada.</p>
+      <h2>About the Founder</h2>
+      <p>This is the professional project page of Jorge Monforte González, a Mining Engineer who chose to focus on the fields of artificial intelligence and robotics. He has also specialized in cybersecurity and Linux systems programming, with the aim of bringing the AI technological revolution into mining operations and their associated industries.</p>
     </div>
   </div>
-
 </Base>
+
 <style>
 .about {
   text-align: justify;
 }
 </style>
+

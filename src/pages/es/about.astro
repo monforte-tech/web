@@ -1,0 +1,69 @@
+---
+import {Image} from 'astro:assets';
+import Menu from '../../components/Menu.astro';
+import Base from '../../layouts/Base.astro';
+import palaAsteroide from '../../images/pala-asteroide.png';
+import naveTierra from '../../images/nave-tierra.png';
+import castillete from '../../images/castillete.png';
+import moais from '../../images/moais.png';
+import '../../styles/comun.css';
+import '../../styles/colors.css';
+import '../../styles/columnas.css';
+
+const base = import.meta.env.BASE_URL;
+const { title, color = "azulon", background = "arena" } = Astro.props;
+---
+
+<Base title="Acerca de Monforte Technologies" color="azulon" background="arena" lang="es" name="about">
+  <Menu slot="menu">
+    <a class="menulink" href={`${base}es/blog`}>Blog</a>
+    <a class="menulink" href={`${base}es/minax`}>Proyecto Minax</a>
+  </Menu>
+
+  <div class="about-wrapper">
+    <div class="remark"></div>
+
+    <div class="fila">
+      <div class="columna1">
+        <h2>Visión</h2>
+            <p>El desarrollo de la humanidad que se debe en gran medida a  la minería que ha puesto a su disposición una cantidad ingente de recursos, materiales y energéticos, se ve amenazado ahora por una serie de fenómenos, especialmente el agotamiento de los recursos no renovables y el calentamiento climático, que son ambos de escala global y de terrible pronóstico</p>
+
+          <p>Muchas voces piden frenar el desarrollo para intentar minimizar el impacto de la actividad industrial en la tierra, pero desde nuestro punto de vista el fenómeno está demasiado avanzado y la única opción viable para frenarlo y revertirlo es la ingeniería a escala planetaria, para ello hay que incrementar la extracción de recursos a niveles que permitan crear procesos que reviertan los efectos sobre el clima de la actividad humana.</p>
+
+        </div>
+        <Image class="ilustracion" src={palaAsteroide} alt="Excavando un asteroide" />
+    </div>
+      <div class="fila">
+        <Image class="ilustracion" src={naveTierra} alt="Excavando un asteroide" />
+        <div class="columna2">
+        <h2>Misión</h2>
+        <p>Con este objetivo nuestra única opción consiste en avanzar la tecnología hasta lograr que nuestra civilización alcance el grado de desarrollo suficiente mediante la explotación de recursos terrestres y del espacio próximo lo más pronto posible.</p>
+          <p>Para poder lograrlo apostamos a que es necesario dotar de autonomía a nuestras máquinas para que sean capaces de operar en ambientes a donde los humanos no podamos llegar como la corteza terrestre profunda, el fondo de los oceanos y el espacio y para lograr esa autonomía es necesario robotizar por completo los procesos extractivos.</p>
+
+          <p>Es en esta labor donde Monforte Technologies centra su actividad buscando unificar los esfuerzos desde la academia, la empresa e internet en la creación de una serie de herramientas que simplifiquen en la medida de lo posible la robotización de las labores mineras.</p>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="columna1">
+        <h2>Valores</h2>
+        <p>Las problemáticas globales amenazan con dividir en dos el mundo con un nuevo telón de acero que anticipe una tercera guerra mundial por los recursos menguantes mientras se estinguen las vidas de miles de millones de personas de hambre y de sed.</p>
+        <p>Ante este terrible panorama es necesario posicionarse encontra de las dinámicas belicistas y apostar por un desarrollo industrial de la humanidad más allá de la órbita terrestre buscando en satélites, asteroides y cometas recursos que se agotan en la superficie de nuestro planeta necesarios para mantener a flote las vidas de miles de millones de personas.</p>
+        <p>La revolución de la inteligencia artificial llega in extremis a una humanidad que va a necesitar hasta del último de los recursos disponibles para no quedar a la deriva en el mar de los Sargazos del tiempo.</p>
+
+      </div>
+      <Image class="ilustracion" src={moais} alt="Moais de la era de la industrialización" />
+      </div>
+
+    <div class="about">
+    <h2>Acerca del Fundador</h2>
+    <p>Esta es la página del proyecto profesional de Jorge Monforte González un Ingeniero de Minas que escogió enfocarse en el campo de la inteligencia artificial y la robótica, especializadose también en campos como la ciberseguridad y la programación de sistemas Linux con el objetivo de implantar la revolución tecnológica IA en las explotaciones mineras y su industria asociada.</p>
+    </div>
+  </div>
+
+</Base>
+<style>
+.about {
+  text-align: justify;
+}
+</style>

@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Menu from '../components/Menu.astro';
 import {Image} from 'astro:assets';
-import mineroOrdenador from '../images/minero-ordenador.png';
-import robotMinero from '../images/robot-mina.png';
-import centroDeDatos from '../images/datos-bajo-tierra.png';
+import minerComputer from '../images/minero-ordenador.png';
+import miningRobot from '../images/robot-mina.png';
+import undergroundDataCenter from '../images/datos-bajo-tierra.png';
 import LogoHorizontal from '../components/logos/Horizontal.astro';
 import LogoApilado from '../components/logos/Apilado.astro';
 import '../styles/comun.css';
@@ -14,77 +14,70 @@ import '../styles/columnas.css';
 const base = import.meta.env.BASE_URL;
 ---
 
-<Layout title="About Monforte Technologies" color="azulon" background="arena">
+<Layout title="Monforte Technologies" color="azulon" background="arena" lang="en" name="">
     <Menu slot="menu">
-      <a class="menulink" href={`${base}about`}>Acerca De</a>
+      <a class="menulink" href={`${base}about`}>About</a>
       <a class="menulink" href={`${base}blog`}>Blog</a>
-      <a class="menulink" href={`${base}minax`}>Proyecto Minax</a>
+      <a class="menulink" href={`${base}minax`}>Project Minax</a>
     </Menu>
     <LogoHorizontal  color="azulon" slot="title" />
     <LogoApilado  color="azulon" slot="title" />
 
-    <div class="remark">Nuestro objetivo es asistir en la robotización completa de las actividades mineras poniendo a disposición de las empresas extractoras soluciones de software abiertas que vertebren la digitalización de sus actividades</div>
+    <div class="remark">Our goal is to support the full robotization of mining activities by providing open software solutions that drive the digitalization of extraction companies’ operations.</div>
 
 <div class="fila">
     <div class="columna1">
-      <h2>Integramos TIC y Minería</h2>
+      <h2>We Integrate ICT and Mining</h2>
       <h3>Software</h3>
-      <p>Pondremos a disposición de nuestros clientes y usuarios a través de Internet repositorios curados de software seleccionados para cubrir las necesidades de la industria extractiva basandonos en distribuciones de software abierto y aportando programas desarrollados a la medida de las necesidades mineras cubriendo casos de usos comunes y particulares.</p>
-
+      <p>We will provide our clients and users with curated software repositories via the Internet, selected to meet the needs of the extractive industry. These will be based on open-source distributions and enhanced with custom-developed programs tailored to common and specific mining use cases.</p>
 
       <h3>Hardware</h3>
-      <p>Asistimos a las empresas de hardware en la creación de dispositivos válidos para la informatización de las labores mineras, adaptándose a las especificaciones dadas por los requerimientos del software además de los exigentes requisitos funcionales y ambientales..</p>
+      <p>We assist hardware companies in creating devices suitable for the computerization of mining operations, ensuring they meet both the software requirements and the demanding functional and environmental conditions.</p>
 
-      <h3>Comunicaciones</h3>
-      <p>A partir de los requerimientos funcionales del sistema informático y las necesidades de comunicación de la dirección facultativa desplegaremos las redes para tener al personal comunicado y todos los dispositivos digitales conectados, monitorizados y actualizados.</p>
+      <h3>Communications</h3>
+      <p>Based on the functional requirements of the IT system and the communication needs of management, we deploy networks that keep personnel connected and all digital devices monitored, updated, and online.</p>
     </div>
-    <Image class="ilustracion" src={centroDeDatos} alt="Centro de datos bajo tierra" />
+    <Image class="ilustracion" src={undergroundDataCenter} alt="Underground data center" />
   </div>
 
 <div class="fila">
-  <Image class="ilustracion" src={mineroOrdenador} alt="Minero trabajando con su ordenador" />
+  <Image class="ilustracion" src={minerComputer} alt="Miner working with a computer" />
   <div class="columna2">
-  <h2>Gestionamos Todo el Ciclo de Vida del Software</h2>
+  <h2>We Manage the Entire Software Lifecycle</h2>
 
-  <h3>Desarrollo</h3>
+  <h3>Development</h3>
+      <p>We follow an agile development philosophy that fits well with modern tools and workflows. Our technology stack is based on C, C++, and Python, which allows us to quickly develop high-performance applications.</p>
 
-      <p>Cara al desarrollo de software seguimos la filosofía ágil que se adapta muy bien a las herramientas y otros flujos de trabajo del mundo tecnológico. Hemos escogido la pila formada por los lenguajes de programación C, C++ y Python como base para nuestras soluciones lo que nos permite el desarrollo rápido de aplicaciones de alto rendimiento.</p>
+  <h3>Security</h3>
+      <p>Security is a top-tier concern in our development. We apply the zero-trust principle across our systems and manage all facets of cybersecurity as a continuous improvement process, aiming to keep our solutions constantly updated and verified.</p>
 
-  <h3>Seguridad</h3>
-      <p>La seguridad es un criterio de primer nivel en nuestros desarrollos, buscando aplicar el principio de confianza cero en nuestros sistemas. Gestionamos integramente todas las facetas de la ciberseguridad como un proceso de mejora contínua buscando en todo momento tener nuestras soluciones actualizadas y verificadas.</p>
-
-  <h3>Operaciones</h3>
-      <p>Automatizamos todo el ciclo de vida del software a partir de su desarrollo, testeo, empaquetamiento, distribución, instalación, monitorización y mantenimiento, usando para ello herramientas abiertas y documentadas.</p>
+  <h3>Operations</h3>
+      <p>We automate the entire software lifecycle—from development, testing, packaging, and distribution to installation, monitoring, and maintenance—using open and well-documented tools.</p>
   </div>
 </div>
 
-
 <div class="fila">
   <div class="columna1">
-      <h2> Aplicamos Tecnologías Disruptivas</h2>
-      <p>
-      <h3>Robotización Autónoma</h3>
+      <h2>We Apply Disruptive Technologies</h2>
+      
+      <h3>Autonomous Robotization</h3>
+      <p>The development of hardware and software that allows machines to perceive their environment signals a new era where machinery can operate without human intervention. While not yet fully achieved, there are strong indications of how to integrate IT systems to enable this.</p>
 
-      <p>El desarrollo de hardware y software que permite dotar a la maquinaria de una percepción de su entorno anuncia una era de máquinas que no necesitan de operarios humanos para poder llevar a cabo su cometido. Si bien esta cuestión no está completamente resuelta si se tienen los indicios suficientes de como integrar los sistemas informáticos que lo permitan.</p>
+      <h3>Internet of Things</h3>
+      <p>Miniaturization and cost reduction in hardware bring vast possibilities to mining environments, but also increase the complexity of control systems. This demands a systematic approach that covers the entire lifecycle of these devices.</p>
 
-      <h3>Internet de las Cosas</h3>
-
-      <p>Las posibilidades que proporcionan la miniaturización y abaratamiento del hardware en los entornos mineros son enormes pero conllevan un incremento en la complejidad de los sistemas de control que requiere una sistematización que abarca todo el ciclo de vida de uso de estos dispositivos.</p>
-
-      <h3>Inteligencia Artificial</h3>
-
-      <p>La generación y uso de modelos construidos mediante técnicas de aprendizaje automático y otras tecnologías del campo de la inteligencia artificial están revolucionando todos los ámbitos de la actividad humana. Nuestra apuesta es asistir a las empresas mineras en todo el ciclo de vida de este tipo de aplicaciones tecnológicas.
+      <h3>Artificial Intelligence</h3>
+      <p>The generation and use of models based on machine learning and other AI technologies are revolutionizing every human activity. Our goal is to support mining companies throughout the entire lifecycle of these technological applications.</p>
   </div>
-  <Image class="ilustracion" src={robotMinero} alt="Robot antropomorfo con un pico en una mina" />
+  <Image class="ilustracion" src={miningRobot} alt="Humanoid robot with a pickaxe in a mine" />
 </div>
 </Layout>
 
 <style>
-
 h1 {
   width: 740px;
   padding: 60px 0px 0px 20px;
   line-height: 1em;
 }
-
 </style>
+

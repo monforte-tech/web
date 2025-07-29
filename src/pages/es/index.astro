@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Menu from '../../components/Menu.astro';
+import {Image} from 'astro:assets';
+import mineroOrdenador from '../../images/minero-ordenador.png';
+import robotMinero from '../../images/robot-mina.png';
+import centroDeDatos from '../../images/datos-bajo-tierra.png';
+import LogoHorizontal from '../../components/logos/Horizontal.astro';
+import LogoApilado from '../../components/logos/Apilado.astro';
+import '../../styles/comun.css';
+import '../../styles/colors.css';
+import '../../styles/columnas.css';
+
+const base = import.meta.env.BASE_URL;
+---
+
+  <Layout title="Monforte Technologies" color="azulon" background="arena" lang="es" name="">
+    <Menu slot="menu">
+    <a class="menulink" href={`${base}es/about`}>Acerca De</a>
+      <a class="menulink" href={`${base}es/blog`}>Blog</a>
+    <a class="menulink" href={`${base}es/minax`}>Proyecto Minax</a>
+    </Menu>
+    <LogoHorizontal  color="azulon" slot="title" />
+    <LogoApilado  color="azulon" slot="title" />
+
+    <div class="remark">Nuestro objetivo es asistir en la robotización completa de las actividades mineras poniendo a disposición de las empresas extractoras soluciones de software abiertas que vertebren la digitalización de sus actividades</div>
+
+<div class="fila">
+    <div class="columna1">
+      <h2>Integramos TIC y Minería</h2>
+      <h3>Software</h3>
+      <p>Pondremos a disposición de nuestros clientes y usuarios a través de Internet repositorios curados de software seleccionados para cubrir las necesidades de la industria extractiva basandonos en distribuciones de software abierto y aportando programas desarrollados a la medida de las necesidades mineras cubriendo casos de usos comunes y particulares.</p>
+
+
+      <h3>Hardware</h3>
+      <p>Asistimos a las empresas de hardware en la creación de dispositivos válidos para la informatización de las labores mineras, adaptándose a las especificaciones dadas por los requerimientos del software además de los exigentes requisitos funcionales y ambientales..</p>
+
+      <h3>Comunicaciones</h3>
+      <p>A partir de los requerimientos funcionales del sistema informático y las necesidades de comunicación de la dirección facultativa desplegaremos las redes para tener al personal comunicado y todos los dispositivos digitales conectados, monitorizados y actualizados.</p>
+    </div>
+    <Image class="ilustracion" src={centroDeDatos} alt="Centro de datos bajo tierra" />
+  </div>
+
+<div class="fila">
+  <Image class="ilustracion" src={mineroOrdenador} alt="Minero trabajando con su ordenador" />
+  <div class="columna2">
+  <h2>Gestionamos Todo el Ciclo de Vida del Software</h2>
+
+  <h3>Desarrollo</h3>
+
+      <p>Cara al desarrollo de software seguimos la filosofía ágil que se adapta muy bien a las herramientas y otros flujos de trabajo del mundo tecnológico. Hemos escogido la pila formada por los lenguajes de programación C, C++ y Python como base para nuestras soluciones lo que nos permite el desarrollo rápido de aplicaciones de alto rendimiento.</p>
+
+  <h3>Seguridad</h3>
+      <p>La seguridad es un criterio de primer nivel en nuestros desarrollos, buscando aplicar el principio de confianza cero en nuestros sistemas. Gestionamos integramente todas las facetas de la ciberseguridad como un proceso de mejora contínua buscando en todo momento tener nuestras soluciones actualizadas y verificadas.</p>
+
+  <h3>Operaciones</h3>
+      <p>Automatizamos todo el ciclo de vida del software a partir de su desarrollo, testeo, empaquetamiento, distribución, instalación, monitorización y mantenimiento, usando para ello herramientas abiertas y documentadas.</p>
+  </div>
+</div>
+
+
+<div class="fila">
+  <div class="columna1">
+      <h2> Aplicamos Tecnologías Disruptivas</h2>
+      <p>
+      <h3>Robotización Autónoma</h3>
+
+      <p>El desarrollo de hardware y software que permite dotar a la maquinaria de una percepción de su entorno anuncia una era de máquinas que no necesitan de operarios humanos para poder llevar a cabo su cometido. Si bien esta cuestión no está completamente resuelta si se tienen los indicios suficientes de como integrar los sistemas informáticos que lo permitan.</p>
+
+      <h3>Internet de las Cosas</h3>
+
+      <p>Las posibilidades que proporcionan la miniaturización y abaratamiento del hardware en los entornos mineros son enormes pero conllevan un incremento en la complejidad de los sistemas de control que requiere una sistematización que abarca todo el ciclo de vida de uso de estos dispositivos.</p>
+
+      <h3>Inteligencia Artificial</h3>
+
+      <p>La generación y uso de modelos construidos mediante técnicas de aprendizaje automático y otras tecnologías del campo de la inteligencia artificial están revolucionando todos los ámbitos de la actividad humana. Nuestra apuesta es asistir a las empresas mineras en todo el ciclo de vida de este tipo de aplicaciones tecnológicas.
+  </div>
+  <Image class="ilustracion" src={robotMinero} alt="Robot antropomorfo con un pico en una mina" />
+</div>
+</Layout>
+
+<style>
+
+h1 {
+  width: 740px;
+  padding: 60px 0px 0px 20px;
+  line-height: 1em;
+}
+
+</style>
