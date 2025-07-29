@@ -19,7 +19,7 @@ const { title, lang, name = "none", color = "azulon", background = "arena" } = A
 const otherLang = lang === 'en' ? 'Español' : 'English';
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background})`;
-const faviconUrl = `${import.meta.env.BASE_URL}/favicon.svg`;
+const faviconUrl = `${import.meta.env.BASE_URL}favicon.svg`;
 const base = import.meta.env.BASE_URL;
 const langLink = lang === 'en' ? `${base}es/${name}` :  `${base}${name}`;
 ---
