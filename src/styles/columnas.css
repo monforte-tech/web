@@ -30,6 +30,34 @@ img.ilustracion {
   hyphens: auto;
 }
 
+div.fila-texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+div.columna-state {
+  width: 58%;
+  text-align: justify;
+}
+
+div.columna-news {
+  width: 38%;
+}
+
+ul.news {
+  list-style-position: inside;
+  text-align: justify;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+}
+
+span.date {
+  font-style: italic;
+}
+
 @media (width > 900px) {
   .remark {
     width: 900px;
