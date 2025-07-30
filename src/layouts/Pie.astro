@@ -7,6 +7,7 @@ import Linkedin from '../components/logos/Linkedin.astro';
 const { lang, color = "azulon", background = "arena" } = Astro.props;
 const textColor = `var(--${color})`;
 const backgroundColor = `var(--${background}-oscuro)`;
+const base = import.meta.env.BASE_URL;
 
 ---
 <footer id="pie" class="pergamino no-pie">
@@ -17,14 +18,16 @@ const backgroundColor = `var(--${background}-oscuro)`;
       </div>
       <div class="links-links">
         <ul>
-          <li><a href="">Colegio de Ingenieros de Minas</a>
-          <li><a href="">Página Personal</a>
-          <li><a href="">Proyecto Minax</a>
+          <li><a href="https://coimne.es/">Colegio de Ingenieros de Minas</a>
+          <li><a href="https://llou.net">Página Personal</a>
+          <li><a href={`${base}minax`}>Proyecto Minax</a>
+          <li><a href={`${base}cookieconsent`}>Consentimiento de Cookies</a>
         </ul>
       </div>
     </div>
     <div class="address">
       <div class="address-title">{lang === "en" ? "Address" : "Dirección"}</div>
+      
         Monforte Technologies<br>
     San Bernardo 14, Primero<br>
     33402 Avilés (Asturias)<br>
